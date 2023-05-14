@@ -9,7 +9,7 @@ var storyText = [["You are walking with your troop when suddenly you realize you
 
 
 ]
-var buttonText = [["explore","catch up with troop"],["check","don't check"],["feed the man","report the man"]]
+var buttonText = [["explore","catch up with troop"],["don't check","check"],["feed the man","report the man"]]
 var backgrounds = ["url('forest.jpg')","url('cave.jpg')","url('caveman.jpg')","url('scouts.jpg')"]
 
 function displayText(text1="",text2="",text3=""){
@@ -45,7 +45,7 @@ function advanceButtons()
     button.style.margin="2.5%";
     button.id="button1";
     document.getElementById("background").appendChild(button);
-    button.addEventListener ("click", advanceStory);
+    button.addEventListener ("click", wrongAnswer);
 
     var button2 = document.createElement("button");
     button2.innerHTML =  buttonText[eventNum][1];
@@ -53,7 +53,7 @@ function advanceButtons()
     button2.style.height="5%";
     button2.style.margin="2.5%";
     button2.style.top="50%";
-    button.id="button2";
+    button2.id="button2";
     document.getElementById("background").appendChild(button2);
     button2.addEventListener ("click", advanceStory);
     eventNum = eventNum + 1;
@@ -73,4 +73,9 @@ function advanceStory()
     document.getElementById("background").style.backgroundImage=backgrounds[eventNum];
 
     displayText(storyText[eventNum][0],storyText[eventNum][1],storyText[eventNum][2]);
+}
+
+function wrongAnswer()
+{
+    document.getElementById("background").removeChild(document.getElementById("background").children[0]);
 }
