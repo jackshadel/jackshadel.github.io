@@ -1,0 +1,48 @@
+.picture{
+    height: 40vw;
+    width: 70vw;
+    background-image: url("forest.jpg");
+    background-size: cover;
+}
+
+.text-box{
+    height: 9vw;
+    width: 70vw;
+    border: 0.1vw solid black;
+    margin: auto;
+    background-color: lightgrey;
+}
+
+.inner-box{
+    height: 3vw;
+    width: 20vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    overflow: hidden;
+    white-space:nowrap
+}
+
+@keyframes animate {
+    0% {
+        width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+
+p1{
+    font-size: 2vw;
+}
+p2{
+    font-size: 2vw;
+}
+p3{
+    font-size: 2vw;
+}
