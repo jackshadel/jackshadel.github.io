@@ -1,9 +1,9 @@
 window.onload = advanceStory;
 num = 1;
 var eventNum = 0;
-var storyText = [["You are walking with your troop when suddenly you realize you have forgotten your","hiking stick. You run back to retrive it, but when you return your troop is gone. Do","you take the time to explore or do you catch up with your troop?"],
+var storyText = [["You are walking with your troop, when suddenly, you realize you have forgotten your","hiking stick. You run back to retrive it, but when you return your troop is gone. Do","you take the time to explore or do you catch up with your troop?"],
                  ["You decide to run after your troop. Exploring would be a waste of effort that could", "go towards serving Big Brother. As you continue down the path you see a cave with","light coming out of it. A enemy of the state might be hiding in there. Do you check?"],
-                 ["You decide to check. No enemy of the state will get past you. As you enter the cave ", "you see a hungry looking man with an unkempt beard. You have a bag of nuts in your."," pocket. Do you offer the man your food or report him to the Thought Police?"],
+                 ["You decide to check. No enemy of the state will get past you. As you enter the cave ", "you see a hungry looking man with an unkempt beard. You have a bag of nuts in your"," pocket. Do you offer the man your food or report him to the Thought Police?"],
                  ["You decide to report him to the thought police. He is obviously guilty. After tying","him up you exit the cave and see your troop in the distance. Filled with love for Big","Brother, you return to the troop and go on with your day."]
 
 
