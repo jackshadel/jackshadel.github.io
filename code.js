@@ -8,9 +8,9 @@ var storyText = [["You are walking with your troop when suddenly you realize you
 
 
 
-]
-var buttonText = [["explore","catch up with troop"],["don't check","check"],["feed the man","report the man"]]
-var backgrounds = ["url('forest.jpg')","url('cave.jpg')","url('caveman.jpg')","url('scouts.jpg')"]
+];
+var buttonText = [["explore","catch up with troop"],["don't check","check"],["feed the man","report the man"]];
+var backgrounds = ["url('forest.jpg')","url('cave.jpg')","url('caveman.jpg')","url('scouts.jpg')"];
 
 function displayText(text1="",text2="",text3=""){
     
@@ -20,9 +20,9 @@ function displayText(text1="",text2="",text3=""){
         document.getElementById("line" + num).offsetHeight; /* trigger reflow */
         document.getElementById("line" + num).style.animation = null; 
         document.getElementById("text" + num).innerHTML = text1;
-        document.getElementById("line" + num).style.animation="animate 2.5s linear forwards"
+        document.getElementById("line" + num).style.animation="animate 2.5s linear forwards";
         num = num + 1;
-        setTimeout(() => {displayText(text2,text3);},2500)
+        setTimeout(() => {displayText(text2,text3);},2500);
     }
     else
     {
